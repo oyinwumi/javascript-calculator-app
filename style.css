@@ -24,10 +24,9 @@
     background-color: #FFFFFF;
     border: 2px solid grey;
     border-radius: 12px;
-    /* align-items: center; */
     padding: 15px ;
     justify-content: center;
-    /* margin-left: 15px; */
+  
   }
   
   /* form{
@@ -59,8 +58,6 @@
     grid-template-rows: 40px  40px 40px 40px 40px;
     row-gap: 10px;
     column-gap: 10px;
-   
-   
   }
   .wrap button{
     outline: none;
@@ -75,9 +72,7 @@
     background-color:rgb(250, 226, 217) ;
   }
 
-  /* .wrap button:active{
-    transform: translateY(0.5em);
-  } */
+
   #result-display{
     text-align: right;
     font-size: 25px;
@@ -94,5 +89,16 @@
   #del{
     font-size: 12px;
   }
+
+@media(min-width:320px) and (max-width:500px){
+  .button-container{
+    width: 70%;
+  }
+}
   
-  
+@media(min-width:501px) and (max-width:650px){
+  .button-container{
+    width:50%;
+  }
+
+}

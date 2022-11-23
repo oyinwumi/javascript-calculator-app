@@ -2,7 +2,7 @@
 const display = document.querySelector('#display')
 const resultDisplay = document.querySelector('#result-display')
 const controlButtons =document.querySelector('.wrap').children
-const allSymbols = ['+','-','*','/','%','c','del','=']
+const allSymbols = ['+','-','*','/','%','c','x','=']
 
 let firstValue = ''
 let secondValue = ''
@@ -12,9 +12,7 @@ let result = ''
 const calculate = () =>{
     firstValue = parseFloat(firstValue)
     secondValue = parseFloat(secondValue)
-    // const updateDisplayResult = (e) =>{
-    //     resultDisplay( e.target.id)
-    // }
+   
 
     if (symbol === '+') result = firstValue + secondValue
     if (symbol === '-') result = firstValue - secondValue
@@ -33,20 +31,21 @@ for(let button of controlButtons){
     const{ innerText: btnValue } = button
      const btnValueIsSymbol = allSymbols.includes(btnValue)
 
-    //  if(secondValue && btnValue === '=' ) return null
+   
 
      if(btnValue === 'C'){
         firstValue =  secondValue = display.innerText  = symbol = ''
-        return resultDisplay.innerText = ''
+        return resultDisplay.innerText = 0
         
      }
 
-      else if(btnValue === 'DEL'){
-       return display.innerText = display.innerText.splice(-1, ) 
+      else if(btnValue === 'x'){
+       return display.innerText = display.innerText.slice(0, 1)
          
        }
-    //  if (btnValue || firstValue === '/'  || btnValue && firstValue === '+' || btnValue && firstValue === '-'  || btnValue && firstValue === '%'  ) {
-    //     return 
+
+    //   else if (btnValueIsSymbol || firstValue !== btnValue && '+' ) {
+    //     return display.innerText = ''
     //  }
 
  
