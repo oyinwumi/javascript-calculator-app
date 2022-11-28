@@ -35,7 +35,7 @@ for(let button of controlButtons){
 
      if(btnValue === 'C'){
         firstValue =  secondValue = display.innerText  = symbol = ''
-        return resultDisplay.innerText = 0
+        return resultDisplay.innerText = ''
         
      }
 
