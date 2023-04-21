@@ -2,7 +2,7 @@
 const display = document.querySelector('#display')
 const resultDisplay = document.querySelector('#result-display')
 const controlButtons =document.querySelector('.wrap').children
-const allSymbols = ['+','-','*','/','%','c','x','=']
+const allSymbols = ['+','-','*','/','%','c','del','=']
 
 let firstValue = ''
 let secondValue = ''
@@ -39,7 +39,7 @@ for(let button of controlButtons){
         
      }
 
-      else if(btnValue === 'x'){
+      else if(btnValue === 'Del'){
        return display.innerText = display.innerText.slice(0, -1)
          
        }
