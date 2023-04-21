@@ -40,7 +40,7 @@ for(let button of controlButtons){
      }
 
       else if(btnValue === 'x'){
-       return display.innerText = display.innerText.slice(0, 1)
+       return display.innerText = display.innerText.slice(0, -1)
          
        }
 
